@@ -16,8 +16,10 @@ $(document).ready(function(){
 			numberOfOperator++;
 			if(onScreen.length === 0){
 				alert("Invalid!");
+				numberOfOperator--;
 			}else if(numberOfOperator >1 && tgt.id !== "calc"){
 				alert("Invalid!");
+				numberOfOperator--;
 			}else if(tgt.id === "calc"){
 				if(currentOperation === "*"){
 					num2 = parseInt(onScreen.split("x")[1]);
